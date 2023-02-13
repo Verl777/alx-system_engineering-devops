@@ -1,2 +1,2 @@
 #!/bin/bash
-cut -f 3 log | uniq -c | sort -n
+tail -n +2 | cut -f -1 | sort |unoq -c | sort -rnk 1 | head -n 11 | rev | ciut -d '' -f -1 | rev
